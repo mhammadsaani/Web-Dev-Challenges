@@ -1,0 +1,25 @@
+body{
+    margin: 20px;
+}
+
+
+.container{
+    width: 400px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: 6px solid #83c5be;
+    background-color: #006d77;
+    color: #edf6f9;
+}
+
+.avatar{
+    width: 150px;
+    border-radius: 20px;
+}
+
+.content{
+    text-align: center;
+    padding: 20px;
+}
