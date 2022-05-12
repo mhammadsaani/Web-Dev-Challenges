@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    margin: 5px;
+}
+
+#main{
+    background: linear-gradient(#585DFE, #FB3796);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px 10px;
+    height: 400px;
+}
+
+#main h1{
+    margin-bottom: 65px;
+    font-size: 22px;
+    line-height: 38px;
+}
+
+#input{
+    margin-top: 0px;
+    font-size: 100px;
+    line-height: 25px;
+}
+
+#results{
+    background-color: #1F2937;
+    padding: 50px 0px; 
+    color: #1A1921;
+    line-height: 20px;
+    color: #ffffff;
+
+}
+
+#results h3{
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#results h4{
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 25px;
+
+}
+
