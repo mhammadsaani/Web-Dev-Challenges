@@ -1,0 +1,51 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1F2937;
+    padding: 50px 50px;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF
+}
+
+h1{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+span{
+    color: #55F991;
+    display: block;
+}
+
+
+h4{
+    font-weight: 400;
+    color: #D5D4D8;
+
+}
+
+.btn{
+    background: #10B981;
+    color: #FFFFFF;
+    padding: 9px 17px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-right: 30px;
+    width: 200px;;
+    height: 40px;
+    
+}
+
+hr{
+    margin-top: 30px;
+}
+
+input{
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 10px;
+}
