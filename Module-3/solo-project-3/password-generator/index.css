@@ -40,6 +40,7 @@ h4{
 
 hr{
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 input{
@@ -48,4 +49,17 @@ input{
     border-radius: 5px;
     width: 200px;
     margin-right: 10px;
+}
+
+.para{
+    background: #10B981;
+    color: #FFFFFF;
+    padding: 9px 17px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-right: 30px;
+    width: 200px;;
+    height: 40px;
+    display: inline;
 }

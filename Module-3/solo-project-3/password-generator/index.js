@@ -4,7 +4,7 @@ let btnBottomLeft = document.getElementById("btn-bottom-left-el")
 let btnBottomRight = document.getElementById("btn-bottom-right-el")
 
 
-let characters = [" ", "!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ":", ";", "<", "="]
+let characters = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ":", ";", "<", "="]
 
 function userInput(){
     return document.getElementById("userInput").value
