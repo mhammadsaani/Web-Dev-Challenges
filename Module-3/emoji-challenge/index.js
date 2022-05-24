@@ -4,16 +4,18 @@ const setName = document.getElementById("set-name")
 const setNameBtn = document.getElementById("set-name-btn")
 
 
-
-if (JSON.parse(localStorage.getItem("myEmojis") !== '[]')){
-    myEmojis = JSON.parse(localStorage.getItem("myEmojis"))
-}else{
-    localStorage.setItem("myEmojis", `["👨‍💻", "⛷", "🍲"]`)
-    myEmojis = JSON.parse(localStorage.getItem("myEmojis"))
+function getNameFromLocalStorage(){
+    const name = localStorage.getItem("name")
+    if(name !== null){
+        setName.textContent = ` ${name}`
+        nameInput.value = ""
+    }
 }
 
+getNameFromLocalStorage()
+
+
 setNameBtn.addEventListener('click', function(){
-    console.log(nameInput.value)
     storingNameInLocalStorage(nameInput.value)
     if (nameInput.value){
         setName.textContent = ` ${nameInput.value}'s Emoji`
@@ -21,26 +23,25 @@ setNameBtn.addEventListener('click', function(){
     }
 })
 
-
 function storingNameInLocalStorage(value){
     if (value){
         localStorage.setItem("name", `${value}'s Emoji`)
     }
 }
 
-function getNameFromLocalStorage(){
-    const name = localStorage.getItem("name")
-    setName.textContent = ` ${name}`
-    nameInput.value = ""
+const getItemsFromLocalStorage = localStorage.getItem("myEmojis") 
+if (getItemsFromLocalStorage === null || getItemsFromLocalStorage === '[]'){
+    localStorage.setItem("myEmojis", `["👨‍💻", "⛷", "🍲"]`)
+    myEmojis = ["👨‍💻", "⛷", "🍲"]
+    renderEmojis()
 }
 
-getNameFromLocalStorage()
-
-
+renderEmojis()
 
 function renderEmojis() {
     const emojiContainer = document.getElementById("emoji-container")
     emojiContainer.innerHTML = ""
+    myEmojis = JSON.parse(localStorage.getItem("myEmojis"))
     for (let i = 0; i < myEmojis.length; i++) {
         const emoji = document.createElement('span')
         emoji.textContent = myEmojis[i]
@@ -48,7 +49,6 @@ function renderEmojis() {
     }
 }
 
-renderEmojis()
 
 const pushBtn = document.getElementById("push-btn")
 pushBtn.addEventListener("click", function(){
